@@ -32,12 +32,6 @@ set(PROJECT_VERSION 0.2.0)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-std=c++11)
-
-# Test coverage
-set(CXXFLAGS CXXFLAGS -g -O0 -Wall -fprofile-arcs -ftest-coverage)
-set(CFLAGS CFLAGS -g -O0 -Wall -fprofile-arcs -ftest-coverage)
-set(LDFLAGS LDFLAGS -fprofile-arcs -ftest-coverage)
-
 endif() #GNUCXX
 
 # Generate doxygen documentation if doxygen is available
