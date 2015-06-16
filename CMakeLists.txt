@@ -26,8 +26,6 @@
 cmake_minimum_required (VERSION 2.4)
 project(dmc_sockets)
 
-
-
 if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-std=c++11)
 
@@ -37,6 +35,15 @@ set(CFLAGS CFLAGS -g -O0 -Wall -fprofile-arcs -ftest-coverage)
 set(LDFLAGS LDFLAGS -fprofile-arcs -ftest-coverage)
 
 endif() #GNUCXX
+
+# Generate doxygen documentation if doxygen is available
+find_package(Doxygen)
+if(DOXYGEN_FOUND)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile.in ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
+add_custom_target(doc ${DOXYGEN_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile
+	WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+	COMMENT "Generating API documentation with Doxygen" VERBATIM)
+endif(DOXYGEN_FOUND)
 
 # Child projects
 add_subdirectory(src) # The library itself
