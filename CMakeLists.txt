@@ -1,5 +1,5 @@
 ################################################################################
-# CJson. Simple Json Parser
+# dmc_sockets: Multiplatform socket abastraction layer
 ################################################################################
 # The MIT License (MIT)
 # 
