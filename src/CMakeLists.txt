@@ -46,7 +46,7 @@ macro(GroupSources curdir)
 	endforeach()
 endmacro()
 
-GroupSources(dmc_sockets)
+GroupSources(sockets)
 
 if(CMAKE_COMPILER_IS_GNUCXX)
     add_definitions(-std=c++11)
