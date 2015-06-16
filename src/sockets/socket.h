@@ -4,8 +4,8 @@
 // Date: 2014-Dec-21
 //----------------------------------------------------------------------------------------------------------------------
 // Generic socket header
-#ifndef _DMCLIB_CORE_COMM_SOCKET_SOCKET_H_
-#define _DMCLIB_CORE_COMM_SOCKET_SOCKET_H_
+#ifndef _DMC_NODE_COMM_SOCKET_SOCKET_H_
+#define _DMC_NODE_COMM_SOCKET_SOCKET_H_
 
 #ifdef _WIN32
 	#define WIN32_LEAN_AND_MEAN
@@ -79,4 +79,4 @@ namespace dmc {
 	};
 }	// namespace dmc
 
-#endif // _DMCLIB_CORE_COMM_SOCKET_SOCKET_H_
+#endif // _DMC_NODE_COMM_SOCKET_SOCKET_H_

@@ -4,8 +4,8 @@
 // Date: 2014-Dec-21
 //----------------------------------------------------------------------------------------------------------------------
 // Win32 specific code for sockets
-#ifndef _DMCLIB_CORE_COMM_SOCKET_SOCKETWIN32_H_
-#define _DMCLIB_CORE_COMM_SOCKET_SOCKETWIN32_H_
+#ifndef _DMC_NODE_COMM_SOCKET_SOCKETWIN32_H_
+#define _DMC_NODE_COMM_SOCKET_SOCKETWIN32_H_
 
 namespace dmc {
 
@@ -21,4 +21,4 @@ namespace dmc {
 
 }	// namespace dmc
 
-#endif // _DMCLIB_CORE_COMM_SOCKET_SOCKETWIN32_H_
+#endif // _DMC_NODE_COMM_SOCKET_SOCKETWIN32_H_

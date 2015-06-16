@@ -4,8 +4,8 @@
 // Date: 2015-Jan-10
 //----------------------------------------------------------------------------------------------------------------------
 // Server to listen on a port and dispatch incomming connections as new sockets
-#ifndef _DMCLIB_CORE_COMM_SOCKET_SOCKETSERVER_H_
-#define _DMCLIB_CORE_COMM_SOCKET_SOCKETSERVER_H_
+#ifndef _DMC_NODE_COMM_SOCKET_SOCKETSERVER_H_
+#define _DMC_NODE_COMM_SOCKET_SOCKETSERVER_H_
 
 #include "socket.h"
 #include <functional>
@@ -35,4 +35,4 @@ namespace dmc {
 	};
 }
 
-#endif // _DMCLIB_CORE_COMM_SOCKET_SOCKETSERVER_H_
+#endif // _DMC_NODE_COMM_SOCKET_SOCKETSERVER_H_
