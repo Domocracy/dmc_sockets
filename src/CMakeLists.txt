@@ -27,7 +27,7 @@ cmake_minimum_required (VERSION 2.4)
 project(dmc_sockets)
 
 # Collect all sources
-file(GLOB_RECURSE DMC_SOCKETS_SOURCE_FILES "http/*.cpp" "http/*.h" "http/*.inl")
+file(GLOB_RECURSE DMC_SOCKETS_SOURCE_FILES "sockets/*.cpp" "sockets/*.h" "sockets/*.inl")
 
 # Clasify sources according to folder structure.
 # This creates a nice layout for the project in visual studio
